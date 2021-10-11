@@ -32,7 +32,7 @@ const other = "other/";
 const f_php = "php/";
 const f_image_gulp = "img/";
 const root_font_px = 14;
-const proxy = 'http://famionekomura.local';
+const proxy = 'http://komura.local';
 const browsers = [
   "last 3 versions",
   "> 1%",

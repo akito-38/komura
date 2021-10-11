@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------
+// * Utilities
+// ----------------------------------------------------------------
+.u-hide {
+  display: none !important;
+}
+
+.u-hide-pc {
+  display: none !important;
+}
+
+
+@include res_max($break) {
+  .u-hide-pc {
+    display: block !important;
+  }
+
+  .u-hide-sp {
+    display: none !important;
+  }
+}
+
+@include res_max($break) {
+  .md_mb0 {
+    margin-bottom: 0 !important;
+  }
+  .md_mb10 {
+    margin-bottom: 10px !important;
+  }
+}

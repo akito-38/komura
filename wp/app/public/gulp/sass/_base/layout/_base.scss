@@ -1,0 +1,83 @@
+//base
+html {
+  color: $baseColor;
+  font-weight: 500;
+  font-size: #{$baseFontSize}px;
+  font-family: $font01;
+  line-height: 1.8;
+}
+
+body {
+  word-wrap: break-word;
+
+}
+
+a {
+  color: inherit;
+  transition: all .3s;
+
+  &:hover {
+    // text-decoration: underline;
+    opacity: .6;
+
+    img {
+      opacity: .7;
+      transition: all .3s;
+    }
+  }
+}
+
+:visited:hover,
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+input[type='button']:not([disabled]),
+input[type='submit']:not([disabled]),
+input[type='reset']:not([disabled]),
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+input[type='button'],
+input[type='submit'] {
+  -webkit-appearance: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+img {
+  height: auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 500;
+}
+
+a[href^='tel:'] {
+  cursor: default;
+  pointer-events: none;
+
+  @include res_max($break) {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+}

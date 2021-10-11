@@ -1,0 +1,32 @@
+// --------------------------------------
+// レイアウト
+// --------------------------------------
+// .ly_header {
+//   display: flex;
+//   padding: 0 40px;
+//   border-bottom: 1px solid #eee;
+
+//   align-items: center;
+
+//   @include res_max($break) {
+//     padding: 1px 30px 1px 20px;
+//     position: fixed;
+//     top:0;
+//     left:0;
+//     z-index: z(header);
+//     background-color: #fff;
+//     width: 100%;
+//   }
+
+//   justify-content: space-between;
+// }
+
+// .ly_main-footer {
+//   padding-bottom: 20px;
+//   border-top: 1px solid #eee;
+//   background-color: #f9f9f7;
+
+//   @include res_max($break) {
+//     padding-bottom: 10px;
+//   }
+// }

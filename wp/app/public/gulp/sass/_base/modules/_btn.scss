@@ -1,0 +1,89 @@
+/**
+ *
+ */
+// %btn01 {
+//   position: relative;
+//   display: block;
+//   margin: 0 auto;
+//   width: 280px;
+//   text-align: center;
+//   line-height: 51px;
+//   transition: all .5s;
+
+//   &::after {
+//     position: absolute;
+//     top: 50%;
+//     right: 20px;
+//     transform: translateY(-50%) rotate(45deg);
+//   }
+// }
+
+// .md-btn-arrow {
+//   background-image: url(./img/icon/icon-arrow.svg);
+//   background-position: 95% center;
+//   background-size: 11px auto;
+// }
+
+
+// .md-btn01 {
+//   border: 2px solid #000;
+//   background-color: #000;
+//   color: #fff;
+
+//   @extend %btn01;
+
+//   &::after {
+//     @include pc_arrow(#fff, false, 11, 11);
+//   }
+
+//   &:hover {
+//     border: 2px solid #000;
+//     background-color: #fff;
+//     color: #000;
+
+//     &::after {
+//       border-color: #000;
+//     }
+//   }
+// }
+
+// .md-btn02 {
+//   border: 2px solid #000;
+
+//   @extend %btn01;
+
+//   &::after {
+//     @include pc_arrow(#000, false, 11, 11);
+//   }
+// }
+
+// .md-btn03 {
+//   border: 2px solid #fff;
+//   color: #fff;
+
+//   @extend %btn01;
+
+//   &::after {
+//     @include pc_arrow(#fff, false, 11, 11);
+//   }
+
+//   &:hover {
+//     background-color: #fff;
+//     color: #d91618;
+
+//     &::after {
+//       border-color: #d91618;
+//     }
+//   }
+// }
+
+// @include res_max($break) {
+//   %btn01_sp {
+//     width: 260px;
+//     line-height: 50px;
+//   }
+
+//   .md-btn01 {
+//     @extend %btn01_sp;
+//   }
+// }

@@ -1,0 +1,77 @@
+// ----------------------------------------------------------------
+// * Mixins
+// ----------------------------------------------------------------
+//縦方向の中法配置
+
+@mixin trc($x: 50, $y: 50) {
+  top: #{$y}#{'%'};
+  left: #{$x}#{'%'};
+  transform: translate(-50%,-50%);
+}
+
+@mixin tryc($num: 50) {
+  top: #{$num}#{'%'};
+  transform: translateY(-50%);
+}
+
+@mixin trxc($num: 50) {
+  left: #{$num}#{'%'};
+  transform: translateX(-50%);
+}
+
+@mixin fs($size: 24, $base: $baseFontSize) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+//paddingの設定
+@mixin pd_lr($left: 20, $right: $left) {
+  padding-right: $right+ px;
+  padding-left: $left + px;
+}
+
+@mixin pc_arrow($color: #1447a1, $deg: 45, $w: 9, $h: 9) {
+  display: inline-block;
+  width: #{$w}px;
+  height: #{$h}px;
+  border-top: 1.5px solid $color;
+  border-right: 1.5px solid $color;
+  content: '';
+  vertical-align: middle;
+
+  @include res_max($break) {
+    width: #{$w * .95}px;
+    height: #{$h * .95}px;
+  }
+
+  @if $deg !=false {
+    transform: rotate(#{$deg}deg);
+  }
+}
+
+
+// font sizeの指定
+@mixin lt($space:4) {
+   letter-spacing: $space+px;
+}
+
+
+
+// font sizeの指定
+@mixin fs($size: 24, $base: $baseFontSize) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+//レスポンシブの指定
+@mixin res_min($size: $break) {
+  @media only screen and (min-width: $size + 'px') {
+    @content;
+  }
+}
+
+@mixin res_max($size: $break) {
+  @media only screen and (max-width: $size + 'px') {
+    @content;
+  }
+}

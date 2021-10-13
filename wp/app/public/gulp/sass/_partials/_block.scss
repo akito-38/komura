@@ -934,7 +934,7 @@
   text-align: center;
 
   @include res_max($break) {
-    label {
+    a {
       margin: 0 20px;
     }
   }
@@ -943,7 +943,7 @@
     display: none;
   }
 
-  label {
+  a {
     margin: 0 30px;
   }
 }
@@ -960,8 +960,8 @@
   vertical-align: middle;
 }
 
-:checked {
-  &+.formSelect_radio {
+
+  .is-select.formSelect_radio {
     border-color: #e71f19;
 
     &::before {
@@ -977,7 +977,7 @@
       transform: translate(-50%, -50%);
     }
   }
-}
+
 
 .pageHeader02 {
   margin-bottom: 35px;
@@ -1055,6 +1055,10 @@
   width: 100%;
   background-color: #f5f5f5;
 
+  @include res_max($break) {
+    @include fs(16);
+  }
+
   &__223 {
     width: 223px;
   }
@@ -1068,9 +1072,6 @@
     &:first-child {
       margin-left: 0;
     }
-  }
-  @include res_max($break) {
-    @include fs(16);
   }
 }
 
@@ -1197,17 +1198,57 @@
 
 .formTxtarea {
   display: block;
+  padding: 10px;
   width: 100%;
   height: 200px;
-  padding:10px;
   background-color: #f5f5f5;
 
   @include res_max($break) {
     height: 150px;
+
     @include fs(16);
   }
 }
 
-#form02{
-  display: none;
+.mw_wp_form_confirm {
+  .formList_dd {
+    small {
+      display: none;
+    }
+  }
+
+  .formTxtRight {
+    display: none;
+  }
+
+  .termsbox {
+    display: none;
+  }
+
+  .formList_dt {
+    @include res_max($break) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .formAgree {
+    display: none;
+  }
+  .confirmHide{
+    display: none;
+  }
+}
+
+.formThanks {
+  margin-bottom: 200px;
+  text-align: center;
+
+  @include fs(20);
+}
+.btn_back{
+  margin-right: 20px;
 }

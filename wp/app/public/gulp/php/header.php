@@ -73,7 +73,7 @@ include(TEMPLATEPATH. '/inc/constants.php');
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php print SITE_URL; ?>/contact">
             コンタクト
             <span>Contact</span>
           </a>

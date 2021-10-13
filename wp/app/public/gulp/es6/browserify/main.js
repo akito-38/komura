@@ -21,7 +21,14 @@ jQuery(function ($) {
         AjaxZip3.zip2addr(e.currentTarget, '', 'address02', 'address02');
     })
 
-    $('.formSelect').on('change', (e) => {
-        $($('.formSelect:checked').val()).show().siblings().hide();
-    })
+    // $('.formSelect').on('change', (e) => {
+    //     $($('.formSelect:checked').val()).show().siblings().hide();
+    // })
+
+    // let inqVal=$('#form02 input[name="name"]').val();
+
+    // if(inqVal&&inqVal.length>0){
+    //     $('[value="#form02"]').trigger('click');
+    // }
+
 });

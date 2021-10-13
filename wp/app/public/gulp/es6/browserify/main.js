@@ -13,4 +13,15 @@ jQuery(function ($) {
         $('.js-menuSwitch').removeClass('is-active');
     });
 
+
+    $('#postalCode01').on('keyup', (e) => {
+        AjaxZip3.zip2addr(e.currentTarget, '', 'address01', 'address01');
+    })
+    $('#postalCode02').on('keyup', (e) => {
+        AjaxZip3.zip2addr(e.currentTarget, '', 'address02', 'address02');
+    })
+
+    $('.formSelect').on('change', (e) => {
+        $($('.formSelect:checked').val()).show().siblings().hide();
+    })
 });

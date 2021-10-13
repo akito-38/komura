@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'import_header_scripts' );
 function my_load_widget_scripts() {
     // wp_enqueue_script( 'autoKana', get_template_directory_uri() . '/js/jquery.autoKana.js', true, array());
     // wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', true, array());
+    wp_enqueue_script( 'zip', 'https://ajaxzip3.github.io/ajaxzip3.js', true, array());
     wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', true, array());
 
 

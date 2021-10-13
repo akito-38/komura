@@ -76,6 +76,17 @@ jQuery(function ($) {
     $('.js-close').on('click', function (e) {
         $('.js-menuSwitch').removeClass('is-active');
     });
+
+    $('#postalCode01').on('keyup', function (e) {
+        AjaxZip3.zip2addr(e.currentTarget, '', 'address01', 'address01');
+    });
+    $('#postalCode02').on('keyup', function (e) {
+        AjaxZip3.zip2addr(e.currentTarget, '', 'address02', 'address02');
+    });
+
+    $('.formSelect').on('change', function (e) {
+        $($('.formSelect:checked').val()).show().siblings().hide();
+    });
 });
 
 },{"./Scroll":1,"./parallax":3}],3:[function(require,module,exports){

@@ -9,7 +9,11 @@ html {
 
 body {
   word-wrap: break-word;
-
+  padding-top:80px ;
+  @include res_max($break) {
+    padding-top: 55px;
+    @include fs(15);
+  }
 }
 
 a {

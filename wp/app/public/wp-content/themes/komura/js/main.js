@@ -30,12 +30,12 @@ var Scroll = function () {
         _this.move(jQuery(target));
         return false;
       });
-      var hash = location.hash;
-      if (hash.length > 0) {
-        setTimeout(function () {
-          _this.move(jQuery(hash));
-        }, 500);
-      }
+      // let hash = location.hash;
+      // if (hash.length > 0) {
+      //   setTimeout(() => {
+      //     this.move(jQuery(hash));
+      //   }, 500)
+      // }
     }
   }, {
     key: 'move',
@@ -58,33 +58,69 @@ var _Scroll = require('./Scroll');
 
 var _Scroll2 = _interopRequireDefault(_Scroll);
 
+var _parallax = require('./parallax');
+
+var _parallax2 = _interopRequireDefault(_parallax);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 jQuery(function ($) {
     new _Scroll2.default();
-    $('.js-slider').slick({
-        arrows: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        centerMode: true,
-        centerPadding: '11.5%',
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                centerMode: false
-            }
-        }]
+    new _parallax2.default();
+    $('.js-kvPageLoad').addClass('is-load');
+
+    $('.js-menuSwitch').on('click', function (e) {
+        $(e.currentTarget).addClass('is-active');
     });
 
-    $('.js-dropDown').on('click', function (e) {
-        $(e.currentTarget).toggleClass('is-open');
-    });
-
-    $('.js-menu').on('click', function (e) {
-        $('html').toggleClass('is-menu');
+    $('.js-close').on('click', function (e) {
+        $('.js-menuSwitch').removeClass('is-active');
     });
 });
 
-},{"./Scroll":1}]},{},[2]);
+},{"./Scroll":1,"./parallax":3}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Parallax = function () {
+  function Parallax() {
+    var _this = this;
+
+    _classCallCheck(this, Parallax);
+
+    jQuery(window).on('scroll load resize', function () {
+      _this.scroll();
+    });
+  }
+
+  _createClass(Parallax, [{
+    key: 'scroll',
+    value: function scroll() {
+      var top = jQuery(window).scrollTop();
+      jQuery('.js-move').each(function (i, e) {
+        if (jQuery(e).offset().top < top + jQuery(window).outerHeight() - 100) {
+          jQuery(e).addClass('h-after-effect');
+        }
+      });
+
+      // if (top == 0) {
+      //   $('.js-mainHeader').removeClass('is-scroll');
+      // } else {
+      //   $('.js-mainHeader').addClass('is-scroll');
+      // }
+    }
+  }]);
+
+  return Parallax;
+}();
+
+exports.default = Parallax;
+
+},{}]},{},[2]);

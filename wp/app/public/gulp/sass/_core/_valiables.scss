@@ -3,12 +3,12 @@
 // ---------------------------------------------------------------
 $break: 768;
 
-$maxsize: 1108;
-$side:20;
+$maxsize: 1000;
+$side:30;
 $baseFontSize: 16;
 $font01:"Noto Sans JP","游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
-$font02:'Roboto', sans-serif;
-$baseColor:  #454545;
+$font02:"Noto Sans", sans-serif;
+$baseColor:  #323333;
 $linkHoverColor: #00f;
 
 $z-map: ( footerMenu,header,event);

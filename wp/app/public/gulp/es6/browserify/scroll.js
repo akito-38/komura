@@ -13,12 +13,12 @@ class Scroll {
       this.move(jQuery(target));
       return false;
     });
-    // let hash = location.hash;
-    // if (hash.length > 0) {
-    //   setTimeout(() => {
-    //     this.move(jQuery(hash));
-    //   }, 500)
-    // }
+    let hash = location.hash;
+    if (hash.length > 0) {
+      setTimeout(() => {
+        this.move(jQuery(hash));
+      }, 500)
+    }
   }
 
   move(target) {

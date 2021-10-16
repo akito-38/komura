@@ -79,9 +79,6 @@
   display: flex;
   text-align: center;
   font-weight: 500;
-  a{
-    display: block;
-  }
 
   @include res_max($break) {
     display: block;
@@ -93,6 +90,10 @@
   }
 
   justify-content: space-between;
+
+  a {
+    display: block;
+  }
 
   span {
     display: block;
@@ -964,22 +965,22 @@
 }
 
 
-  .is-select.formSelect_radio {
-    border-color: #e71f19;
+.is-select.formSelect_radio {
+  border-color: #e71f19;
 
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: block;
-      width: 74%;
-      height: 74%;
-      border-radius: 50%;
-      background-color: #e71f19;
-      content: '';
-      transform: translate(-50%, -50%);
-    }
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 74%;
+    height: 74%;
+    border-radius: 50%;
+    background-color: #e71f19;
+    content: '';
+    transform: translate(-50%, -50%);
   }
+}
 
 
 .pageHeader02 {
@@ -1241,7 +1242,8 @@
   .formAgree {
     display: none;
   }
-  .confirmHide{
+
+  .confirmHide {
     display: none;
   }
 }
@@ -1252,6 +1254,7 @@
 
   @include fs(20);
 }
-.btn_back{
+
+.btn_back {
   margin-right: 20px;
 }

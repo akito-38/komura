@@ -48,31 +48,35 @@ include(TEMPLATEPATH. '/inc/constants.php');
 
       <ul class="bl_mainHeader_list">
         <li>
-          <a href="#content01" class="js-scroll">
+          <a href="<?php if(!is_front_page()) print SITE_URL; ?>#content01"
+            <?php if(is_front_page()) print 'class="js-scroll"'; ?>>
             ごあいさつ
             <span>Message</span>
           </a>
         </li>
         <li>
-          <a href="#content02" class="js-scroll">
+          <a href="<?php if(!is_front_page()) print SITE_URL; ?>#content02"
+            <?php if(is_front_page()) print 'class="js-scroll"'; ?>>
             政　策
             <span>Policy</span>
           </a>
         </li>
         <li>
-          <a href="#content03" class="js-scroll">
+          <a href="<?php if(!is_front_page()) print SITE_URL; ?>#content03"
+            <?php if(is_front_page()) print 'class="js-scroll"'; ?>>
             プロフィール
             <span>Profile</span>
           </a>
         </li>
         <li>
-          <a href="#content04" class="js-scroll">
+          <a href="<?php if(!is_front_page()) print SITE_URL; ?>#content04"
+            <?php if(is_front_page()) print 'class="js-scroll"'; ?>>
             活動報告
             <span>Activity report</span>
           </a>
         </li>
         <li>
-          <a href="<?php print SITE_URL; ?>/contact" class="js-scroll">
+          <a href="<?php print SITE_URL; ?>/contact">
             コンタクト
             <span>Contact</span>
           </a>

@@ -679,18 +679,31 @@
 }
 
 .snsBox_widget {
+  margin-left: 50px;
+  min-width: 350px;
+
   @include res_max($break) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    min-width: 0;
+    text-align: center;
   }
 }
 
+// .fb_iframe_widget{
+//   width: 350px !important;
+//   iframe{
+//     width: 350px !important;
+//   }
+// }
 .snsBox_links {
   >div {
     margin-bottom: 58px;
     line-height: 2.2;
 
     @include res_max($break) {
-      margin-bottom: 50px;
+      margin: 0 auto 50px;
+      max-width: 350px;
     }
   }
 }
@@ -699,13 +712,14 @@
   display: flex;
   flex-direction: row-reverse;
   margin-top: 115px;
+  margin-bottom: 100px;
 
   @include res_max($break) {
     display: block;
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .snsLink {

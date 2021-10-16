@@ -94,15 +94,20 @@
 </section>
 
 <div class="max-wide">
-  <section class="snsBox js-move h-before-effect"  id="content04">
+  <section class="snsBox js-move h-before-effect" id="content04">
     <div class="snsBox_widget">
-
-
+      <div class="fb-page" data-href="https://m.facebook.com/komura.mikio/" data-tabs="timeline" data-width="350"
+        data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+        data-show-facepile="true">
+        <blockquote cite="https://m.facebook.com/komura.mikio/" class="fb-xfbml-parse-ignore"><a
+            href="https://m.facebook.com/komura.mikio/">古村幹夫後援会</a></blockquote>
+      </div>
     </div>
     <div class="snsBox_links">
       <div>
         <p>最新の活動報告は<br class="u-hide-sp">Facebookで<br>ご覧いただけます。</p>
-        <a href="https://www.facebook.com/profile.php?id=100072227041135" target="_blank" class="snsLink snsLink__fb">facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100072227041135" target="_blank"
+          class="snsLink snsLink__fb">facebook</a>
       </div>
       <div>
         <p>日々の活動は<br class="u-hide-sp">ブログで報告させて<br>いただいております。</p>
@@ -147,5 +152,8 @@
   </div>
 
 </div>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v12.0&appId=389958061711031&autoLogAppEvents=1"
+  nonce="6fvqmdWQ"></script>
 <?php get_footer(); ?>

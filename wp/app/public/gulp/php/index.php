@@ -15,7 +15,7 @@
 </div>
 
 <div class="max-wide">
-  <section class="js-move h-before-effect">
+  <section class="js-move h-before-effect" id="content01">
     <div class="bl_sideImg">
       <img src="<?php print TMP_URL; ?>/img/img01.jpg" alt="" width="370" height="505" loading="lazy">
       <div class="bl_sideImg_data">
@@ -34,7 +34,7 @@
     </div>
   </section>
 </div>
-<section class="stepWrapper js-move h-before-effect">
+<section class="stepWrapper js-move h-before-effect" id="content02">
   <div class="max-wide">
     <h2 class="el_hedding01">全力で町の明日を<br class="u-hide-pc">築いていきます</h2>
     <div class="stepListUnit">
@@ -94,30 +94,25 @@
 </section>
 
 <div class="max-wide">
-  <section class="snsBox js-move h-before-effect">
+  <section class="snsBox js-move h-before-effect"  id="content04">
     <div class="snsBox_widget">
-      <!-- <div class="fb-page" data-href="https://www.facebook.com/IMAKE.co.jp/" data-tabs="timeline" data-width=""
-        data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-        data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/IMAKE.co.jp/" class="fb-xfbml-parse-ignore"><a
-            href="https://www.facebook.com/IMAKE.co.jp/">株式会社IMAKE（イメイク）</a></blockquote>
-      </div> -->
+
 
     </div>
     <div class="snsBox_links">
       <div>
         <p>最新の活動報告は<br class="u-hide-sp">Facebookで<br>ご覧いただけます。</p>
-        <a href="#" class="snsLink snsLink__fb">facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=100072227041135" target="_blank" class="snsLink snsLink__fb">facebook</a>
       </div>
       <div>
         <p>日々の活動は<br class="u-hide-sp">ブログで報告させて<br>いただいております。</p>
-        <a href="#" class="snsLink snsLink__tw">Twiter</a>
+        <a href="https://mobile.twitter.com/mikio_komura" target="_blank" class="snsLink snsLink__tw">Twiter</a>
       </div>
     </div>
   </section>
 </div>
 
-<div class="profWrapper">
+<div class="profWrapper" id="content03">
   <section class="max-wide js-move h-before-effect">
     <div class="bl_sideImg bl_sideImg__prof">
       <img src="<?php print TMP_URL; ?>/img/img05.jpg" alt="" width="610" height="505" loading="lazy">
@@ -153,11 +148,4 @@
 
 </div>
 
-
-
-
-<!-- <div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-  src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v12.0&appId=389958061711031&autoLogAppEvents=1"
-  nonce="px5VPlOb"></script> -->
 <?php get_footer(); ?>

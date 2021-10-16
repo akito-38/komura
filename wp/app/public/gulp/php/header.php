@@ -46,34 +46,33 @@ include(TEMPLATEPATH. '/inc/constants.php');
         </a>
       </div>
 
-
       <ul class="bl_mainHeader_list">
         <li>
-          <a href="#content01">
+          <a href="#content01" class="js-scroll">
             ごあいさつ
             <span>Message</span>
           </a>
         </li>
         <li>
-          <a href="#content02">
+          <a href="#content02" class="js-scroll">
             政　策
             <span>Policy</span>
           </a>
         </li>
         <li>
-          <a href="#content03">
+          <a href="#content03" class="js-scroll">
             プロフィール
             <span>Profile</span>
           </a>
         </li>
         <li>
-          <a href="#content04">
+          <a href="#content04" class="js-scroll">
             活動報告
             <span>Activity report</span>
           </a>
         </li>
         <li>
-          <a href="<?php print SITE_URL; ?>/contact">
+          <a href="<?php print SITE_URL; ?>/contact" class="js-scroll">
             コンタクト
             <span>Contact</span>
           </a>
@@ -81,42 +80,16 @@ include(TEMPLATEPATH. '/inc/constants.php');
 
       </ul>
       <div class="iconList">
-        <a href="#">
+        <a href="https://bit.ly/3lFmvvg" target="_blank">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-pointer.svg" alt="" width="10" height="15" loading="lazy">
           アクセス
         </a>
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=100072227041135" target="_blank">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-facebook.svg" alt="" width="20" height="20" loading="lazy">
         </a>
-        <a href="#">
+        <a href="https://mobile.twitter.com/mikio_komura" target="_blank">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-twitter.svg" alt="" width="20" height="20" loading="lazy">
         </a>
       </div>
     </nav>
-    <!--
-    <button type="button" class="bl_menuSwitch js-menu"><span></span></button>
-    <nav class="bl_mainHeader_right">
-      <ul class="bl_mainHeader_list">
-        <li><a href="#" class="bl_headerNav_txt">妊活コンシェルジュ ファミワン</a></li>
-        <li><a href="https://famione.com/benefit/" class="bl_headerNav_txt">妊活・不妊治療の福利厚生</a></li>
-        <li><a href="https://famione.com/local/" class="bl_headerNav_txt">自治体の方はこちら</a></li>
-        <li class="bl_mainHeader_list_drop js-dropDown">
-          <span>サービス</span>
-          <ul class="bl_mainHeader_list_sub">
-            <li><a href="https://famione.com/live">妊活ライブ</a></li>
-            <li><a href="https://famione.com/premium/">プレミアムプラン</a></li>
-            <li><a href="https://famione.com/mall/">ファミワンモール</a></li>
-            <li><a href="https://famione.com/career/">ファミワンキャリア</a></li>
-            <li><a href="https://famione.com/column/">妊コラム</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="https://form.run/@sales-1619151877" class="bl_mainHeader_btn bl_mainHeader_btn--contact">お問い合わせ</a>
-        </li>
-        <li>
-          <a href="https://form.run/@sales-1626158577" class="bl_mainHeader_btn bl_mainHeader_btn--document">資料請求</a>
-        </li>
-      </ul>
-    </nav> -->
-
   </header>

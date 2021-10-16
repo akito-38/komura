@@ -1,0 +1,1 @@
+2021/10/13 21:47:50 [error] 27108#24896: *22821 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /contact/ HTTP/1.0", upstream: "fastcgi://127.0.0.1:10267", host: "komura.local", referrer: "http://localhost:3000/contact/"

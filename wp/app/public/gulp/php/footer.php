@@ -14,14 +14,14 @@
     </div>
     <div>
       <div class="iconList">
-        <a href="#">
+        <a href="https://bit.ly/3lFmvvg" target="_blank">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-pointer.svg" alt="" width="10" height="15" loading="lazy">
           アクセス
         </a>
-        <a href="#">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100072227041135">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-facebook.svg" alt="" width="35" height="35" loading="lazy">
         </a>
-        <a href="#">
+        <a target="_blank" href="https://mobile.twitter.com/mikio_komura">
           <img src="<?php print TMP_URL; ?>/img/icon/icon-twitter.svg" alt="" width="35" height="35" loading="lazy">
         </a>
       </div>

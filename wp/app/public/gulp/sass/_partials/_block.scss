@@ -311,7 +311,7 @@
       }
 
       &::before {
-        right: 0;
+        left: 0;
         transition: all .3s ease-out 1.3s;
       }
     }
@@ -462,6 +462,7 @@
 
   @include res_max($break) {
     margin-bottom: 30px;
+
 
     br {
       display: none;
@@ -636,6 +637,7 @@
 .stepList_cat {
   @include res_max($break) {
     margin-bottom: 30px;
+
   }
 
   >li {
@@ -643,6 +645,9 @@
     padding-left: 17px;
     counter-increment: stepList;
     line-height: 2.2;
+    @include res_max($break) {
+      letter-spacing: -0.5px;
+    }
 
     &::before {
       position: absolute;

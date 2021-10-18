@@ -73,7 +73,7 @@ jQuery(function ($) {
         $(e.currentTarget).addClass('is-active');
     });
 
-    $('.js-close').on('click', function (e) {
+    $('.js-close,.bl_mainHeader_menu a').on('click', function (e) {
         $('.js-menuSwitch').removeClass('is-active');
     });
 

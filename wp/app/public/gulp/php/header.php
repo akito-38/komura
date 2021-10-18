@@ -14,6 +14,7 @@ include(TEMPLATEPATH. '/inc/constants.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="辰野町,選挙,リーダー,未来,明日に,繋ぐ,消防団,辰野町議会">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
